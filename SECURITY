@@ -1,0 +1,25 @@
+# Política de Segurança
+
+## Introdução
+
+Este documento descreve a política de segurança do projeto. O objetivo é garantir que todas as partes interessadas estejam cientes das práticas e procedimentos que mantêm o projeto seguro.
+
+## Reportando Vulnerabilidades
+
+Se você encontrar uma vulnerabilidade de segurança no nosso projeto, siga os passos abaixo para reportá-la:
+
+1. **Envie um e-mail** para [seu-email@exemplo.com].
+2. Forneça uma descrição clara da vulnerabilidade, incluindo informações sobre como reproduzi-la e qual o impacto potencial.
+3. Inclua informações sobre seu ambiente de teste, como sistema operacional, versão do software, etc.
+
+## Responsabilidade
+
+A segurança do projeto é uma responsabilidade compartilhada entre todos os colaboradores. É importante que todos estejam cientes das melhores práticas de segurança e das possíveis ameaças.
+
+## Contribuições
+
+Contribuições são bem-vindas, mas devem ser feitas de forma segura. Certifique-se de que seu código não introduza vulnerabilidades e siga as diretrizes de segurança estabelecidas.
+
+## Licença
+
+Este documento é parte do projeto e está sujeito à Licença MIT.

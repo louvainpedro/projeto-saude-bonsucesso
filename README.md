@@ -1,3 +1,91 @@
+# Projeto Saúde Bonsucesso
+
+Este projeto visa oferecer uma plataforma digital para a gestão de informações de saúde, promovendo o acesso a serviços médicos, agendamento de consultas e acompanhamento de pacientes. Através de uma interface intuitiva, buscamos facilitar a interação entre profissionais de saúde e pacientes, melhorando a eficiência e a qualidade do atendimento.
+
+## Objetivos do Projeto
+
+- Facilitar o agendamento de consultas médicas.
+- Oferecer um banco de dados seguro para informações dos pacientes.
+- Proporcionar uma experiência amigável e acessível para todos os usuários.
+
+## Tecnologias Utilizadas
+
+- React
+- Node.js
+- Express
+- MongoDB
+
+## Guia Básico de Git
+
+### Inicializando um Repositório
+
+Para criar um novo repositório Git, use:
+
+```bash
+git init
+```
+
+### Clonando um Repositório
+
+Para clonar um repositório existente:
+
+```bash
+git clone <URL do repositório>
+```
+
+### Criando uma Nova Branch
+
+Para criar e mudar para uma nova branch:
+
+```bash
+git checkout -b nome-da-branch
+```
+
+### Adicionando Alterações
+
+Para adicionar arquivos ao seu commit:
+
+```bash
+git add <nome-do-arquivo>
+```
+
+### Fazendo um Commit
+
+Para registrar suas alterações:
+
+```bash
+git commit -m "Mensagem do commit"
+```
+
+### Enviando Alterações para o Remoto
+
+Para enviar suas alterações para o repositório remoto:
+
+```bash
+git push origin nome-da-branch
+```
+
+### Mantendo o Repositório Atualizado
+
+Para baixar as alterações do repositório remoto:
+
+```bash
+git pull
+```
+
+## Contribuições
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir um "issue" ou enviar um "pull request".
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## Política de Segurança
+
+Para relatar problemas de segurança, entre em contato pelo e-mail: [seu-email@example.com].
+
+**README PADRÃO DO REACT:**
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +156,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
