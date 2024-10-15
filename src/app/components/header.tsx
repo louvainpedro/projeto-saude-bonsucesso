@@ -18,6 +18,7 @@ export default function Header ({  onSearch }: HeaderProps) {
         src="images/logoProjetoSaude.png"
         alt="Company Logo"
         className="h-20 my-auto"
+        style={{ marginTop: '7px', marginBottom: '7px' }}
       />
       <div className="flex h-full items-center text-black">
         <input
