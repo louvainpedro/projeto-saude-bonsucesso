@@ -15,7 +15,7 @@ export default function Header ({  onSearch }: HeaderProps) {
     return(
 <div className="flex w-full bg-mid-red-I h-20 justify-between px-2 md:px-8">
       <img
-        src="https://louvainpedro.github.io/psb/images/logoProjetoSaude.png"
+        src="/public/images/logoProjetoSaude.png"
         alt="Company Logo"
         className="h-20 my-auto"
       />
