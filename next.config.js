@@ -1,8 +1,9 @@
-/**
- * @type {import('next').NextConfig}
- */
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: "export"
-};
-
-module.exports = nextConfig;
+    basePath: '/psb', // Ajuste conforme necessário
+    output: 'export',
+    reactStrictMode: true,
+  };
+  
+  module.exports = nextConfig;
+  
