@@ -33,7 +33,7 @@ export default function Menu({ searchQuery, diseases }: MenuProps) {
         {filteredDiseases.length > 0 ? (
           filteredDiseases.map((disease) => (
             <div key={disease.title} id="card" className="flex flex-col p-2 md:border rounded-lg border-gray-300 mx-2 w-full shadow-lg mb-10">
-              <div id="image" className="w-full">
+              <div id="image" className="w-full flex justify-center items-center">
                 <img
                   src={disease.image}
                   alt={disease.title}
