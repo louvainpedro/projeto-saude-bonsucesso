@@ -4,12 +4,12 @@
 
 @font-face {
   font-family: Jost;
-  src: url('../../public/fonts/JOST-TITULOS/static/Jost-Medium.ttf');
+  src: url('../../public/Fonts/JOST-TITULOS/static/Jost-Medium.ttf');
 }
 
 @font-face {
   font-family: Poppins;
-  src: url('../../public/fonts/POPPINS-TEXT-GERAL/Poppins-Light.ttf');
+  src: url('../../public/Fonts/POPPINS-TEXT-GERAL/Poppins-Light.ttf');
 }
 
 :root {
