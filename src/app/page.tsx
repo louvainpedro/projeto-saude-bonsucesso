@@ -15,58 +15,72 @@ const diseases: Disease[] = [
   {
     title: "Diabetes Mellitus",
     description: "O Diabetes Mellitus é uma condição crônica que afeta a forma como o corpo metaboliza a glicose, resultando em níveis elevados de açúcar no sangue. Existem dois tipos principais: Tipo 1 e Tipo 2.",
-    video_link: "https://www.exemplo.com/video-diabetes",
-    pdf_link: "/pdf/exemplo.pdf",
+    video_link: "https://youtu.be/-VZuhAMujaE?feature=shared",
+    pdf_link: "pdf/Diabetes.pdf",
     image: "images/ExampleIMG.jpg"
   },
   {
     title: "Hipertensão Arterial",
     description: "A Hipertensão Arterial, também conhecida como pressão alta, é uma condição crônica caracterizada pela pressão elevada nas artérias, aumentando o risco de doenças cardíacas e derrames.",
-    video_link: "https://www.exemplo.com/video-hipertensao",
-    pdf_link: "/pdf/exemplo.pdf",
+    video_link: "https://youtu.be/K7QnivczWVo?feature=shared",
+    pdf_link: "pdf/Hipertensão (1).pdf",
     image: "images/sotckPhotoHipertensao.jpg"
   },
   {
-    title: "Asma",
-    description: "A Asma é uma doença inflamatória crônica das vias respiratórias que causa dificuldade em respirar, caracterizada por crises recorrentes de falta de ar, chiado e aperto no peito.",
-    video_link: "https://www.exemplo.com/video-asma",
-    pdf_link: "/pdf/exemplo.pdf",
-    image: "images/asma.jpg"
+    title: "Consultas Pré Natal",
+    description: "A consulta pré-natal é um acompanhamento médico fundamental durante a gestação, visando monitorar a saúde da mãe e do bebê, garantindo uma gestação segura.",
+    video_link: "https://youtu.be/oWoZRzf9w0M?feature=shared",
+    pdf_link: "pdf/PreNatal.pdf",
+    image: "images/PreNatal.jpg"
   },
   {
-    title: "Doença de Alzheimer",
-    description: "A Doença de Alzheimer é um distúrbio neurodegenerativo progressivo que causa perda de memória, confusão e alterações de comportamento, afetando principalmente pessoas idosas.",
-    video_link: "https://www.exemplo.com/video-alzheimer",
-    pdf_link: "/pdf/exemplo.pdf",
-    image: "images/Alzheimer.jpg"
+    title: "Puericultura",
+    description: "A puericultura é a área da medicina dedicada ao acompanhamento do crescimento e desenvolvimento infantil, promovendo a saúde e prevenindo doenças desde os primeiros meses de vida.",
+    video_link: "https://youtu.be/4xczsrR0YVo?feature=shared  ",
+    pdf_link: "pdf/Puericultura.pdf",
+    image: "images/Puericultura.png"
   },
   {
-    title: "Artrite Reumatoide",
-    description: "A Artrite Reumatoide é uma doença autoimune crônica que provoca inflamação nas articulações, causando dor, inchaço e, com o tempo, deformidades.",
-    video_link: "https://www.exemplo.com/video-artrite-reumatoide",
-    pdf_link: "/pdf/exemplo.pdf",
-    image: "images/atrite.jpg"
+    title: "Vacinação",
+    description: "A vacinação é uma medida preventiva essencial para proteger contra doenças infecciosas, estimulando o sistema imunológico a combater agentes patogênicos de forma segura e eficaz.",
+    video_link: "https://youtu.be/gX3EtthJ1h4?feature=shared",
+    pdf_link: "pdf/Vacinação.pdf",
+    image: "images/Vacina.jpg"
   },
   {
-    title: "Doença Pulmonar Obstrutiva Crônica (DPOC)",
-    description: "A DPOC é um grupo de doenças pulmonares que bloqueiam o fluxo de ar e dificultam a respiração. Inclui o enfisema e a bronquite crônica.",
-    video_link: "https://www.exemplo.com/video-dpoc",
-    pdf_link: "/pdf/exemplo.pdf",
-    image: "images/pulmonar.jpg"
+    title: "Parasitoses Intestinais",
+    description: "As parasitoses intestinais são infecções causadas por vermes ou protozoários, que afetam o sistema digestivo, causando sintomas como dor abdominal, diarreia e cansaço excessivo.",
+    video_link: "https://youtu.be/gwT9vMsg4kk?feature=shared",
+    pdf_link: "pdf/Parasitones Intestinais.pdf",
+    image: "images/ParasitosesIntestinais.jpg"
   },
   {
-    title: "Câncer de Mama",
-    description: "O Câncer de Mama é um tipo de câncer que se desenvolve nas células da mama, afetando principalmente as mulheres, embora também possa ocorrer em homens.",
-    video_link: "https://www.exemplo.com/video-cancer-mama",
-    pdf_link: "/pdf/exemplo.pdf",
-    image: "images/mama.jpg"
+    title: "Ansiedade",
+    description: "A ansiedade é uma condição emocional caracterizada por sentimentos de preocupação, medo e nervosismo, que pode afetar o bem-estar e a qualidade de vida de quem sofre com ela.",
+    video_link: "https://youtu.be/BvlyS0I9HXI?feature=shared",
+    pdf_link: "pdf/Transtornos de Ansiedade.pdf",
+    image: "images/Ansiedade.jpg"
   },
   {
-    title: "Doença Celíaca",
-    description: "A Doença Celíaca é uma condição autoimune em que a ingestão de glúten leva a danos no intestino delgado, resultando em má absorção de nutrientes.",
-    video_link: "https://www.exemplo.com/video-doenca-celiaca",
-    pdf_link: "/pdf/exemplo.pdf",
-    image: "images/celicaca.jpg"
+    title: "Depressão",
+    description: "A depressão é um transtorno emocional que causa tristeza persistente, perda de interesse nas atividades diárias e afeta o equilíbrio mental e físico, prejudicando o bem-estar geral.",
+    video_link: "https://youtu.be/kWVZ4F05avg?feature=shared",
+    pdf_link: "pdf/Depressão.pdf",
+    image: "images/Depressao.jpg"
+  },
+  {
+    title: "Esteatose Hepática",
+    description: "A esteatose hepática é o acúmulo excessivo de gordura no fígado, que pode levar a inflamação e danos ao órgão, sendo frequentemente associada a fatores como obesidade e alcoolismo.",
+    video_link: "https://youtu.be/WHHHYUwJQZY?feature=shared",
+    pdf_link: "pdf/EsteatoseHepatica.pdf",
+    image: "images/esteatose.jpg"
+  },
+  {
+    title: "Tabagismo",
+    description: "O tabagismo é a dependência do uso do tabaco, geralmente através do cigarro, que pode causar danos à saúde, aumentando o risco de doenças respiratórias, cardiovasculares e câncer.",
+    video_link: "https://youtu.be/cZ-wHIEWMWY?feature=shared",
+    pdf_link: "pdf/Tabagismo.pdf",
+    image: "images/Tabagismo.jpg"
   }
 ];
 
