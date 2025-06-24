@@ -12,37 +12,39 @@ export default function Header({ onSearch }: HeaderProps) {
     onSearch(e.target.value);
   };
 
+  // As classes foram reorganizadas para uma abordagem Mobile-First.
+  // Padrão: Layout empilhado (flex-col).
+  // A partir de 'md' (768px): Layout lado a lado (md:flex-row).
   return (
-    <div className="flex w-full bg-mid-red-I h-20 justify-between px-2 md:px-8">
-      {/* Container para agrupar todas as imagens */}
+    <div className="flex w-full flex-col items-center gap-4 bg-mid-red-I p-4 md:h-20 md:flex-row md:justify-between md:px-8 md:py-0">
+      {/* Container das logos - nenhuma mudança necessária aqui */}
       <div className="flex items-center gap-x-4">
-        {/* 1. Imagem original (a logo) */}
         <img
           src="images/logoProjetoSaude.png"
           alt="Company Logo"
-          className="h-20 my-auto"
+          className="h-16 md:h-20" // Altura ajustada para mobile
         />
-        {/* 2. Segunda imagem */}
         <img
           src="images/logo_prefeitura.png"
           alt="Logo da Prefeitura de Saquarema."
-          className="h-16 my-auto hidden md:block"
+          className="h-14" // Não precisa mais do hidden, pois o layout comporta
         />
-        {/* 3. Terceira imagem */}
         <img
           src="images/logo_saude_familia.png"
           alt="Logo de Sáude da Família."
-          className="h-16 my-auto hidden md:block"
+          className="h-14" // Não precisa mais do hidden
         />
       </div>
 
-      <div className="flex h-full items-center text-black">
+      {/* Container da busca - agora ocupa a largura toda em telas pequenas */}
+      <div className="flex w-full items-center text-black md:w-auto">
         <input
           type="text"
           value={searchInput}
           onChange={handleSearchChange}
           placeholder="Pesquisar"
-          className="text-sm p-2 lg:w-96 border rounded-md shadow-sm text-black focus:outline-light-red-I focus:ring-0 focus:border-transparent"
+          // O input ocupa 100% do container, que por sua vez é 100% no mobile.
+          className="w-full text-sm p-2 border rounded-md shadow-sm text-black focus:outline-light-red-I focus:ring-0 focus:border-transparent lg:w-96"
         />
       </div>
     </div>
