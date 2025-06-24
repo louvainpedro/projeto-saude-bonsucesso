@@ -14,11 +14,28 @@ export default function Header({ onSearch }: HeaderProps) {
 
   return (
     <div className="flex w-full bg-mid-red-I h-20 justify-between px-2 md:px-8">
-      <img
-        src="images/logoProjetoSaude.png"
-        alt="Company Logo"
-        className="h-20 my-auto"
-      />
+      {/* Container para agrupar todas as imagens */}
+      <div className="flex items-center gap-x-4">
+        {/* 1. Imagem original (a logo) */}
+        <img
+          src="images/logoProjetoSaude.png"
+          alt="Company Logo"
+          className="h-20 my-auto"
+        />
+        {/* 2. Segunda imagem */}
+        <img
+          src="images/logo_prefeitura.png"
+          alt="Logo da Prefeitura de Saquarema."
+          className="h-16 my-auto hidden md:block"
+        />
+        {/* 3. Terceira imagem */}
+        <img
+          src="images/logo_saude_familia.png"
+          alt="Logo de Sáude da Família."
+          className="h-16 my-auto hidden md:block"
+        />
+      </div>
+
       <div className="flex h-full items-center text-black">
         <input
           type="text"
