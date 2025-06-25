@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Header from "./components/header";
 import Menu from "./components/menu";
 
+// A interface e os dados de 'diseases' continuam os mesmos...
 interface Disease {
   title: string,
   description: string,
@@ -84,17 +85,58 @@ const diseases: Disease[] = [
   }
 ];
 
-export default function Home () {
+
+export default function Home() {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const handleSearch = (search: string) => {
     setSearchQuery(search);
   };
 
-  return(
-    <div className="w-full h-full bg-light-gray flex flex-col">
-      <Header onSearch={handleSearch}/>
-      <Menu diseases={diseases} searchQuery={searchQuery}/>
-    </div>
-  )
+  return (
+    // Container principal da página
+    <main className="flex w-full min-h-screen flex-col items-center bg-light-gray">
+      <Header onSearch={handleSearch} />
+
+      {/* Seção de Introdução e Contador */}
+      <section className="w-full max-w-5xl p-4 md:p-8 text-center">
+        {/* Card de Boas-Vindas */}
+        <div className="mb-8 rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+          <h1 className="mb-4 text-2xl font-bold text-gray-800 font-Jost">
+            Bem-vindo ao portal Saúde Bonsucesso!
+          </h1>
+          <p className="text-base leading-relaxed text-gray-600 font-Poppins md:text-lg">
+            Este espaço foi criado por estudantes da UniLaSalle, em parceria com
+            o Posto de Saúde de Bonsucesso, pensando em você. Nosso objetivo é
+            oferecer um canal de informações claras e acessíveis sobre saúde.
+            Durante uma visita ao posto, observamos que muitos usuários têm
+            dificuldade em compreender a linguagem técnica, o que pode
+            atrapalhar o cuidado com a própria saúde e a prevenção de doenças.
+          </p>
+          <p className="mt-4 text-base leading-relaxed text-gray-600 font-Poppins md:text-lg">
+            Aqui, você encontrará materiais educativos, como cartilhas e
+            vídeos, sobre as doenças mais comuns, prevenção e os serviços
+            oferecidos pela unidade. Tudo foi desenvolvido com apoio dos
+            profissionais do posto e com base em fontes confiáveis, como a OMS,
+            para que você e sua família possam cuidar melhor da saúde.
+          </p>
+        </div>
+
+        {/* Contador de Visitas */}
+        <div className="flex flex-col items-center">
+           <h2 className="mb-2 text-sm font-semibold text-gray-500">VISITANTES</h2>
+           <a title='Contador de Visitas do MegaContador' href='https://megacontador.com.br/'>
+                <img src='https://megacontador.com.br/img-gn2PMY4Z811uYw4L-38.gif' border='0' alt='Contador de visitas' />
+           </a>
+        </div>
+      </section>
+
+      {/* Linha Divisória */}
+      <div className="w-full max-w-5xl px-4">
+        <hr className="border-t border-gray-300" />
+      </div>
+
+      <Menu diseases={diseases} searchQuery={searchQuery} />
+    </main>
+  );
 }

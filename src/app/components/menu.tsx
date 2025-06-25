@@ -58,12 +58,24 @@ export default function Menu({ searchQuery, diseases }: MenuProps) {
                   {disease.description}
                 </p>
                 <div className="flex justify-between mt-2">
+                  {/* ***** INÍCIO DA ALTERAÇÃO ***** */}
                   <Link
                     href={disease.video_link}
-                    className="mt-2 text-lg underline text-light-blue"
+                    // Adicionado 'flex', 'items-center' e 'gap-x-1.5' para alinhar o ícone e o texto
+                    className="mt-2 flex items-center gap-x-1.5 text-lg underline text-light-blue hover:text-blue-700"
                   >
+                    {/* Ícone SVG do YouTube */}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5" // Tamanho proporcional
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                    >
+                      <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
                     Saiba mais!
                   </Link>
+                  {/* ***** FIM DA ALTERAÇÃO ***** */}
                   <button
                     className="flex hover:text-light-blue"
                     onClick={() => downloadPDF(disease.pdf_link)}
