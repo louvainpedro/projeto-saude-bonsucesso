@@ -85,7 +85,6 @@ const diseases: Disease[] = [
   }
 ];
 
-
 export default function Home() {
   const [searchQuery, setSearchQuery] = useState<string>("");
 
@@ -124,10 +123,19 @@ export default function Home() {
 
         {/* Contador de Visitas */}
         <div className="flex flex-col items-center">
-           <h2 className="mb-2 text-sm font-semibold text-gray-500">VISITANTES</h2>
-           <a title='Contador de Visitas do MegaContador' href='https://megacontador.com.br/'>
-                <img src='https://megacontador.com.br/img-gn2PMY4Z811uYw4L-38.gif' border='0' alt='Contador de visitas' />
-           </a>
+          <h2 className="mb-2 text-sm font-semibold text-gray-500">
+            VISITANTES
+          </h2>
+          <a
+            title="Contador de Visitas do MegaContador"
+            href="https://megacontador.com.br/"
+          >
+            {/* O atributo 'border="0"' foi removido daqui */}
+            <img
+              src="https://megacontador.com.br/img-gn2PMY4Z811uYw4L-38.gif"
+              alt="Contador de visitas"
+            />
+          </a>
         </div>
       </section>
 
